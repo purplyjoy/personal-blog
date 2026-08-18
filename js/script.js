@@ -175,3 +175,21 @@ videos.forEach(video => {
         });
     });
 });
+
+const themeToggle = document.getElementById("theme-toggle");
+
+if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark-mode");
+    themeToggle.checked = true;
+}
+
+// Change theme when toggle is clicked
+themeToggle.addEventListener("change", function () {
+    if (themeToggle.checked) {
+        document.body.classList.add("dark-mode");
+        localStorage.setItem("theme", "dark");
+    } else {
+        document.body.classList.remove("dark-mode");
+        localStorage.setItem("theme", "light");
+    }
+});

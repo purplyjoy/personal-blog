@@ -4,28 +4,47 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Blog</title>
-        <link rel="icon" type="image/png" href="../imgs/logo.png">
-        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" type="image/png" href="../../assets/imgs/logo.png">
+        <link rel="stylesheet" href="../../css/style.css">
     </head>
     <body>
+
+        <script>
+            if (localStorage.getItem("theme") === "dark") {
+                document.body.classList.add("dark-mode");
+            }
+        </script>
         
         <!-- navigation bar -->
         <nav>
-            <a href="../index.html"><img src="../imgs/logo.png" alt="Logo"></a>
+            
+            <div class="nav-left">
+                <!-- theme toggle button -->
+                <label class="theme-switch">
+                    <input type="checkbox" id="theme-toggle">
+                    <span class="slider">
+                        <span class="icon sun">&#x2600;</span>
+                        <span class="icon moon">&#x1F319;</span>
+                    </span>
+                </label>
+
+                <!-- logo -->
+                <a href="../../index.html"><img src="../../assets/imgs/logo.png" alt="Logo"></a>
+            </div>
             
             <ul class="nav-links" id="navLinks">
 
                 <!-- pages -->
-                <li><a href="../index.html">Home</a></li>
-                <li><a class="active" href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a class="active" href="../blog.html">Blog</a></li>
+                <li><a href="../contact.html">Contact</a></li>
 
                 <!-- socials -->
                 <li><a href="https://www.facebook.com/joyce.lodana" target="_blank"  rel="noopener">
-                    <img src="../imgs/fb-logo.png" alt="Facebook">
+                    <img src="../../assets/imgs/fb-logo.png" alt="Facebook">
                 </a></li>
                 <li><a href="https://www.instagram.com/krumi.j" target="_blank"  rel="noopener">
-                    <img src="../imgs/ig-logo.png" alt="Instagram">
+                    <img src="../../assets/imgs/ig-logo.png" alt="Instagram">
                 </a></li>
             </ul>
 
@@ -33,13 +52,13 @@
         </nav>
 
         <main class="blog-page-content">
-            <a href="blog.html"><h2>&#8592; All Posts</h2></a>
+            <a href="../blog.html"><h2>&#8592; All Posts</h2></a>
 
             <section class="blog-post-content">
                 <p class="name"><b>Joyce Llorera</b></p>
                 <p class="date">August 07, 2026</p>
                 
-                <img src="../imgs/childhood.jpg" alt="Childhood">
+                <img src="../../assets/imgs/childhood.jpg" alt="Childhood">
                 <h1>The Child I Was</h1>
                 <p class="blog-article">
                     There was a time when all I wanted was to grow up. I wished I could fast-forward into the future, skip waiting, and become the adult I imagined. I thought adulthood meant freedom—the chance to make my own decisions, live on my own, and finally build the peaceful, stable life I dreamed of. As a child, I couldn't wait to leave childhood behind.
@@ -48,7 +67,9 @@
                     <br><br>
                     I remember how I used to spend my days playing from morning until night. Most of my childhood was spent outside with friends, making our own adventures. We'd play hide-and-seek, play house, run in the rain, splash around in the mud, and pretend we're chefs by mixing leaves and fruits into our own little recipes. I think I've played all the games I could have as a child. I was an adventorous kid. I would wander off to places my parents didn't know I had gone. I often go to the rice fields not too far from our home. We would walk there under the bright afternoon sun, picking fruits and flowers along the way. Sometimes, we'd even come home carrying a bag full of mangoes. Those simple trips became some of my favorite childhood memories. That was our way of spending time together, creating fun out of the ordinary.
                     <br><br>
-                    I'm not just all about playing games though. I'm was also a good student. Back in elementary school, I was a consistent honor student. I was one of the top students in our batch, and I was actively involved in school organizations, activities, and competitions. Looking back, I realize just how much I enjoyed being that kind of student. One of the most memorable moments I had was during our school's Buwan ng Wika celebration. I was chosen as the representative of our grade level for a storytelling competition. I had to reenact an entire story all by myself, playing not only the main character but also the supporting characters. It was challenging, but somehow, I pulled it off. My performance was apparently amazing—as everyone told me afterward—and I ended up winning the competition. Because of that, I was chosen as our grade level's representative again in the following years until I graduated from elementary school. I also joined competitions outside our school. One of them was an Araling Panlipunan (AP) contest where I competed against students from other schools. I only had a few weeks to prepare, so everything felt rushed. I didn't have time to review the other topics, but I focused on memorizing the Philippine geography. And yes, I once memorized the entire map of the Philippines, along with the capital cities of each province. Since I've memorized the whole Philippine map it was the easiest part of the test for me, even though it was considered the hard level. I managed to make it through several rounds, but I eventually lost in the round for the top five. The questions were about tourist spots, which I hadn't had enough time to review. Even though I didn't make it to the top five, I still placed in the top ten and was awarded a medal and a certificate of participation. It was a great experience. How I loved being a competitive student. Sometimes, I wish I had stayed that way. But things changed when I entered high school. I experienced a bit of culture shock because everything felt so different from what I was used to. Elementary school had been familiar to me. I knew how things worked, I was comfortable with my environment, and I knew what kind of student I was. Then suddenly, I entered a completely different world. Because of that transition, I wasn't able to make it onto the honor list in Grade 7. It was the only grade level where I lost my honor streak. Thankfully, I was able to regain it when I reached Grade 8. Still, that one year made me realize that being a good student isn't always about maintaining a perfect record. There will be times when things change, when you struggle to adjust, and when you don't perform the way you used to. And that's okay. Being an active and competitive student became such an important part of my childhood. Through those experiences, I gained more than medals, certificates, and recognition. I gained memories, confidence, knowledge, friendships, and values that have become a part of who I am. 
+                    I'm not just all about playing games though. I'm was also a good student. Back in elementary school, I was a consistent honor student. I was one of the top students in our batch, and I was actively involved in school organizations, activities, and competitions. Looking back, I realize just how much I enjoyed being that kind of student. One of the most memorable moments I had was during our school's Buwan ng Wika celebration. I was chosen as the representative of our grade level for a storytelling competition. I had to reenact an entire story all by myself, playing not only the main character but also the supporting characters. It was challenging, but somehow, I pulled it off. My performance was apparently amazing—as everyone told me afterward—and I ended up winning the competition. Because of that, I was chosen as our grade level's representative again in the following years until I graduated from elementary school. I also joined competitions outside our school. One of them was an Araling Panlipunan (AP) contest where I competed against students from other schools. I only had a few weeks to prepare, so everything felt rushed. I didn't have time to review the other topics, but I focused on memorizing the Philippine geography. And yes, I once memorized the entire map of the Philippines, along with the capital cities of each province. Since I've memorized the whole Philippine map it was the easiest part of the test for me, even though it was considered the hard level. I managed to make it through several rounds, but I eventually lost in the round for the top five. The questions were about tourist spots, which I hadn't had enough time to review. Even though I didn't make it to the top five, I still placed in the top ten and was awarded a medal and a certificate of participation. It was a great experience. 
+                    <br><br>
+                    How I loved being a competitive student. Sometimes, I wish I had stayed that way. But things changed when I entered high school. I experienced a bit of culture shock because everything felt so different from what I was used to. Elementary school had been familiar to me. I knew how things worked, I was comfortable with my environment, and I knew what kind of student I was. Then suddenly, I entered a completely different world. Because of that transition, I wasn't able to make it onto the honor list in Grade 7. It was the only grade level where I lost my honor streak. Thankfully, I was able to regain it when I reached Grade 8. Still, that one year made me realize that being a good student isn't always about maintaining a perfect record. There will be times when things change, when you struggle to adjust, and when you don't perform the way you used to. And that's okay. Being an active and competitive student became such an important part of my childhood. Through those experiences, I gained more than medals, certificates, and recognition. I gained memories, confidence, knowledge, friendships, and values that have become a part of who I am. 
                     <br><br>
                     Childhood was a chapter I once wanted to leave behind, only to realize later how much I would miss it. I can't go back to those days, but I can always look back and remember the child I was—the carefree, curious, and adventurous girl who found happiness in the simplest things. Looking at who I am now, I sometimes can't believe how different I've become. I used to have so much energy. I could spend an entire day playing outside, joining activities, competing in contests, and talking to people without giving it much thought. Now, I feel like I've lost so much of that energy. I'm much quieter, more hesitant, and far less active than I was when I was a kid. Even the student I used to be feels like someone from a different time. I was once so competitive and active in school. I joined competitions, participated in events, and took pride in being an honor student. Now, I don't even get honors anymore, I rarely participate in school events, and I find myself avoiding the spotlight rather than stepping into it. I even became afraid of being in front of people, which feels almost ironic when I remember how I used to stand onstage and perform without hesitation.
                     <br><br>
@@ -60,27 +81,33 @@
             <section id="explore" class="explore">
 
                 <div class="explore-content" data-date="2026-02-24">
-                    <a href="scenery.html"><img src="../imgs/mayon.jpg" alt="Scenery"></a> 
+                    <a href="scenery.html"><img src="../../assets/imgs/mayon.jpg" alt="Scenery"></a> 
                     <h3>Scenery</h3>
                     <p>February 24, 2026</p>
                 </div>
 
                 <div class="explore-content" data-date="2026-02-25">
-                    <a href="games.html"><img src="../imgs/ml4.jpg" alt="Online Game"></a> 
+                    <a href="games.html"><img src="../../assets/imgs/ml4.jpg" alt="Online Game"></a> 
                     <h3>Online Games</h3>
                     <p>February 25, 2026</p>
                 </div>
 
                 <div class="explore-content" data-date="2026-02-26">
-                    <a href="memories.html"><img src="../imgs/memories.jpg" alt="Memories"></a>
+                    <a href="memories.html"><img src="../../assets/imgs/memories.jpg" alt="Memories"></a>
                     <h3>Memory Keeping</h3>
                     <p>February 26, 2026</p>
                 </div>
 
                 <div class="explore-content" data-date="2026-08-05">
-                    <a href="careers.html"><img src="../imgs/careers.jpg" alt="Careers"></a> 
+                    <a href="careers.html"><img src="../../assets/imgs/careers.jpg" alt="Careers"></a> 
                     <h3>Dream Careers</h3>
                     <p>August 05, 2026</p>
+                </div>
+
+                <div class="explore-content" data-date="2026-08-16">
+                    <a href="sunsets.html"><img src="../../assets/imgs/sunset1.jpg" alt="Sunset"></a> 
+                    <h3>Sunsets</h3>
+                    <p>August 16, 2026</p>
                 </div>
 
             </section>
@@ -89,19 +116,19 @@
             <section id="img-gallery" class="img-gallery">
 
                 <div class="pic">
-                    <img src="../imgs/childhood1.jpg" alt="Childhood">
+                    <img src="../../assets/imgs/childhood1.jpg" alt="Childhood">
                 </div>
                 <div class="pic">
-                    <img src="../imgs/childhood2.jpg" alt="Childhood">
+                    <img src="../../assets/imgs/childhood2.jpg" alt="Childhood">
                 </div>
                 <div class="pic">
-                    <img src="../imgs/childhood3.jpg" alt="Childhood">
+                    <img src="../../assets/imgs/childhood3.jpg" alt="Childhood">
                 </div>
                 <div class="pic">
-                    <img src="../imgs/childhood4.jpg" alt="Childhood">
+                    <img src="../../assets/imgs/childhood4.jpg" alt="Childhood">
                 </div>
                 <div class="pic">
-                    <img src="../imgs/childhood5.jpg" alt="Childhood">
+                    <img src="../../assets/imgs/childhood5.jpg" alt="Childhood">
                 </div>
             </section>
             
@@ -110,12 +137,12 @@
          <footer>
             <p>"Life has got all those twists and turns. You've got to hold on tight and off you go."</p>
             <div class="foot-contacts">
-                <a href="https://www.facebook.com/joyce.lodana" target="_blank" rel="noopener noreferrer"><img src="../imgs/facebook.png" alt="Facebook"></a>
-                <a href="https://www.instagram.com/krumi.j" target="_blank" rel="noopener noreferrer"><img src="../imgs/ig.png" alt="Instagram"></a>
-                <a href="https://github.com/purplyjoy" target="_blank" rel="noopener noreferrer"><img src="../imgs/github.png" alt="GitHub"></a>
+                <a href="https://www.facebook.com/joyce.lodana" target="_blank" rel="noopener noreferrer"><img src="../../assets/imgs/facebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/krumi.j" target="_blank" rel="noopener noreferrer"><img src="../../assets/imgs/ig.png" alt="Instagram"></a>
+                <a href="https://github.com/purplyjoy" target="_blank" rel="noopener noreferrer"><img src="../../assets/imgs/github.png" alt="GitHub"></a>
             </div>
         </footer>
 
-        <script src="../js/script.js"></script>
+        <script src="../../js/script.js"></script>
     </body>
 </html>

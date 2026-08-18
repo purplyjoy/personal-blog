@@ -4,14 +4,33 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Contact</title>
-        <link rel="icon" type="image/png" href="../imgs/logo.png">
+        <link rel="icon" type="image/png" href="../assets/imgs/logo.png">
         <link rel="stylesheet" href="../css/style.css">
     </head>
     <body>
+
+        <script>
+            if (localStorage.getItem("theme") === "dark") {
+                document.body.classList.add("dark-mode");
+            }
+        </script>
         
         <!-- navigation bar -->
         <nav>
-            <a href="../index.html"><img src="../imgs/logo.png" alt="Logo"></a>
+            
+            <div class="nav-left">
+                <!-- theme toggle button -->
+                <label class="theme-switch">
+                    <input type="checkbox" id="theme-toggle">
+                    <span class="slider">
+                        <span class="icon sun">&#x2600;</span>
+                        <span class="icon moon">&#x1F319;</span>
+                    </span>
+                </label>
+
+                <!-- logo -->
+                <a href="../index.html"><img src="../assets/imgs/logo.png" alt="Logo"></a>
+            </div>
             
             <ul class="nav-links" id="navLinks">
 
@@ -22,10 +41,10 @@
 
                 <!-- socials -->
                 <li><a href="https://www.facebook.com/joyce.lodana" target="_blank"  rel="noopener">
-                    <img src="../imgs/fb-logo.png" alt="Facebook">
+                    <img src="../assets/imgs/fb-logo.png" alt="Facebook">
                 </a></li>
                 <li><a href="https://www.instagram.com/krumi.j" target="_blank"  rel="noopener">
-                    <img src="../imgs/ig-logo.png" alt="Instagram">
+                    <img src="../assets/imgs/ig-logo.png" alt="Instagram">
                 </a></li>
             </ul>
 
@@ -40,14 +59,14 @@
                 </p>
                 
                 <div class="email">
-                    <a href="mailto:joycellorera2@gmail.com?subject=Inquiry" target="_blank"><img src="../imgs/email.png" alt="Email">
+                    <a href="mailto:joycellorera2@gmail.com?subject=Inquiry" target="_blank"><img src="../assets/imgs/email.png" alt="Email">
                     <a href="mailto:joycellorera2@gmail.com" target="_blank" class="email-text"><p>joycellorera2@gmail.com</p></a> 
                 </div>
                 
                 <div class="contacts">
-                    <a href="https://www.facebook.com/joyce.lodana" target="_blank" rel="noopener noreferrer"><img src="../imgs/facebook.png" alt="Facebook"></a>
-                    <a href="https://www.instagram.com/krumi.j" target="_blank" rel="noopener noreferrer"><img src="../imgs/ig.png" alt="Instagram"></a>
-                    <a href="https://github.com/purplyjoy" target="_blank" rel="noopener noreferrer"><img src="../imgs/github.png" alt="GitHub"></a>
+                    <a href="https://www.facebook.com/joyce.lodana" target="_blank" rel="noopener noreferrer"><img src="../assets/imgs/fb-logo.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/krumi.j" target="_blank" rel="noopener noreferrer"><img src="../assets/imgs/ig-logo.png" alt="Instagram"></a>
+                    <a href="https://github.com/purplyjoy" target="_blank" rel="noopener noreferrer"><img src="../assets/imgs/github.png" alt="GitHub"></a>
                 </div>
             </div>
 

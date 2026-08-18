@@ -4,28 +4,47 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Blog</title>
-        <link rel="icon" type="image/png" href="../imgs/logo.png">
-        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" type="image/png" href="../../assets/imgs/logo.png">
+        <link rel="stylesheet" href="../../css/style.css">
     </head>
     <body>
+
+        <script>
+            if (localStorage.getItem("theme") === "dark") {
+                document.body.classList.add("dark-mode");
+            }
+        </script>
         
         <!-- navigation bar -->
         <nav>
-            <a href="../index.html"><img src="../imgs/logo.png" alt="Logo"></a>
+            
+            <div class="nav-left">
+                <!-- theme toggle button -->
+                <label class="theme-switch">
+                    <input type="checkbox" id="theme-toggle">
+                    <span class="slider">
+                        <span class="icon sun">&#x2600;</span>
+                        <span class="icon moon">&#x1F319;</span>
+                    </span>
+                </label>
+
+                <!-- logo -->
+                <a href="../../index.html"><img src="../../assets/imgs/logo.png" alt="Logo"></a>
+            </div>
             
             <ul class="nav-links" id="navLinks">
 
                 <!-- pages -->
-                <li><a href="../index.html">Home</a></li>
-                <li><a class="active" href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a class="active" href="../blog.html">Blog</a></li>
+                <li><a href="../contact.html">Contact</a></li>
 
                 <!-- socials -->
                 <li><a href="https://www.facebook.com/joyce.lodana" target="_blank"  rel="noopener">
-                    <img src="../imgs/fb-logo.png" alt="Facebook">
+                    <img src="../../assets/imgs/fb-logo.png" alt="Facebook">
                 </a></li>
                 <li><a href="https://www.instagram.com/krumi.j" target="_blank"  rel="noopener">
-                    <img src="../imgs/ig-logo.png" alt="Instagram">
+                    <img src="../../assets/imgs/ig-logo.png" alt="Instagram">
                 </a></li>
             </ul>
 
@@ -33,13 +52,13 @@
         </nav>
 
         <main class="blog-page-content">
-            <a href="blog.html"><h2>&#8592; All Posts</h2></a>
+            <a href="../blog.html"><h2>&#8592; All Posts</h2></a>
 
             <section class="blog-post-content">
                 <p class="name"><b>Joyce Llorera</b></p>
                 <p class="date">August 16, 2026</p>
 
-                <img src="../imgs/sunset1.jpg" alt="Sunset">
+                <img src="../../assets/imgs/sunset1.jpg" alt="Sunset">
                 <h1>Sunsets</h1>
                 <p class="blog-article">
                     One of the thing I always find myself doing whenever I get the chance is taking photos of sunsets. There is something about watching the sky change colors that makes me feel more present and connected to the world around me. Sunsets have always been beautiful to me, no matter what colors fill the sky. Sometimes they're soft and simple, while other times they're  bright and colorful. Either way, I never get tired of looking at them or capturing them.
@@ -54,31 +73,31 @@
             <section id="explore" class="explore">
                 
                 <div class="explore-content" data-date="2026-02-24">
-                    <a href="scenery.html"><img src="../imgs/mayon.jpg" alt="Scenery"></a>
+                    <a href="scenery.html"><img src="../../assets/imgs/mayon.jpg" alt="Scenery"></a>
                     <h3>Scenery</h3>
                     <p>February 24, 2026</p>
                 </div>
 
                 <div class="explore-content" data-date="2026-02-25">
-                    <a href="games.html"><img src="../imgs/ml4.jpg" alt="Online Game"></a> 
+                    <a href="games.html"><img src="../../assets/imgs/ml4.jpg" alt="Online Game"></a> 
                     <h3>Online Games</h3>
                     <p>February 25, 2026</p>
                 </div>
 
                 <div class="explore-content" data-date="2026-02-26">
-                    <a href="memories.html"><img src="../imgs/memories.jpg" alt="Memories"></a> 
+                    <a href="memories.html"><img src="../../assets/imgs/memories.jpg" alt="Memories"></a> 
                     <h3>Memory Keeping</h3>
                     <p>February 26, 2026</p>
                 </div>
 
                 <div class="explore-content" data-date="2026-08-05">
-                    <a href="careers.html"><img src="../imgs/careers.jpg" alt="Careers"></a> 
+                    <a href="careers.html"><img src="../../assets/imgs/careers.jpg" alt="Careers"></a> 
                     <h3>Dream Careers</h3>
                     <p>August 05, 2026</p>
                 </div>
 
                 <div class="explore-content" data-date="2026-08-07">
-                    <a href="childhood.html"><img src="../imgs/childhood.jpg" alt="Childhood"></a>
+                    <a href="childhood.html"><img src="../../assets/imgs/childhood.jpg" alt="Childhood"></a>
                     <h3>The Child I Was</h3>
                     <p>August 07, 2026</p>
                 </div>
@@ -88,19 +107,19 @@
             <h2>Gallery</h2>
             <section id="img-gallery" class="img-gallery">
                 <div class="pic">
-                 <img src="../imgs/sunset2.jpg" alt="Sunset">
+                 <img src="../../assets/imgs/sunset2.jpg" alt="Sunset">
                 </div>
                 <div class="pic">
-                    <img src="../imgs/sunset3.jpg" alt="Sunset"> 
+                    <img src="../../assets/imgs/sunset3.jpg" alt="Sunset"> 
                 </div>
                 <div class="pic">
-                    <img src="../imgs/sunset4.jpg" alt="Sunset"> 
+                    <img src="../../assets/imgs/sunset4.jpg" alt="Sunset"> 
                 </div>
                 <div class="pic">
-                    <img src="../imgs/sunset5.jpg" alt="Sunset"> 
+                    <img src="../../assets/imgs/sunset5.jpg" alt="Sunset"> 
                 </div>
                 <div class="pic">
-                    <img src="../imgs/sunset6.jpg" alt="Sunset"> 
+                    <img src="../../assets/imgs/sunset6.jpg" alt="Sunset"> 
                 </div>
             </section>
 
@@ -109,12 +128,12 @@
          <footer>
             <p>"Life has got all those twists and turns. You've got to hold on tight and off you go."</p>
             <div class="foot-contacts">
-                <a href="https://www.facebook.com/joyce.lodana" target="_blank" rel="noopener noreferrer"><img src="../imgs/facebook.png" alt="Facebook"></a>
-                <a href="https://www.instagram.com/krumi.j" target="_blank" rel="noopener noreferrer"><img src="../imgs/ig.png" alt="Instagram"></a>
-                <a href="https://github.com/purplyjoy" target="_blank" rel="noopener noreferrer"><img src="../imgs/github.png" alt="GitHub"></a>
+                <a href="https://www.facebook.com/joyce.lodana" target="_blank" rel="noopener noreferrer"><img src="../../assets/imgs/facebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/krumi.j" target="_blank" rel="noopener noreferrer"><img src="../../assets/imgs/ig.png" alt="Instagram"></a>
+                <a href="https://github.com/purplyjoy" target="_blank" rel="noopener noreferrer"><img src="../../assets/imgs/github.png" alt="GitHub"></a>
             </div>
         </footer>
 
-        <script src="../js/script.js"></script>
+        <script src="../../js/script.js"></script>
     </body>
 </html>

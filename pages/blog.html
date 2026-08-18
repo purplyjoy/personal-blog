@@ -4,14 +4,33 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Blog</title>
-        <link rel="icon" type="image/png" href="../imgs/logo.png">
+        <link rel="icon" type="image/png" href="../assets/imgs/logo.png">
         <link rel="stylesheet" href="../css/style.css">
     </head>
     <body>
 
+        <script>
+            if (localStorage.getItem("theme") === "dark") {
+                document.body.classList.add("dark-mode");
+            }
+        </script>
+        
         <!-- navigation bar -->
         <nav>
-            <a href="../index.html"><img src="../imgs/logo.png" alt="Logo"></a>
+            
+            <div class="nav-left">
+                <!-- theme toggle button -->
+                <label class="theme-switch">
+                    <input type="checkbox" id="theme-toggle">
+                    <span class="slider">
+                        <span class="icon sun">&#x2600;</span>
+                        <span class="icon moon">&#x1F319;</span>
+                    </span>
+                </label>
+
+                <!-- logo -->
+                <a href="../index.html"><img src="../assets/imgs/logo.png" alt="Logo"></a>
+            </div>
             
             <ul class="nav-links" id="navLinks">
 
@@ -22,10 +41,10 @@
 
                 <!-- socials -->
                 <li><a href="https://www.facebook.com/joyce.lodana" target="_blank"  rel="noopener">
-                    <img src="../imgs/fb-logo.png" alt="Facebook">
+                    <img src="../assets/imgs/fb-logo.png" alt="Facebook">
                 </a></li>
                 <li><a href="https://www.instagram.com/krumi.j" target="_blank"  rel="noopener">
-                    <img src="../imgs/ig-logo.png" alt="Instagram">
+                    <img src="../assets/imgs/ig-logo.png" alt="Instagram">
                 </a></li>
             </ul>
 
@@ -55,7 +74,7 @@
                     <h2 class="blog-topic-title">Moments</h2>
 
                     <article id="old-days-blog" class="blog-content" data-date="2026-02-25">
-                        <img src="../imgs/childhood-friends.jpg" alt="Blog4">
+                        <img src="../assets/imgs/childhood-friends.jpg" alt="Blog4">
                         <div class="blog-texts">
                             <p class="blog-date">Februay 25, 2026</p>
                             <h3>The Old Days</h3>
@@ -71,7 +90,7 @@
                     </article>
 
                     <article id="itdays-blog" class="blog-content" data-date="2026-03-03">
-                        <img src="../imgs/itdays.jpg" alt="IT Days">
+                        <img src="../assets/imgs/itdays.jpg" alt="IT Days">
                         <div class="blog-texts">
                             <p class="blog-date">March 03, 2026</p>
                             <h3>IT Days</h3>
@@ -84,7 +103,7 @@
                     </article>
 
                     <article id="present-blog" class="blog-content" data-date="2026-03-13">
-                        <img src="../imgs/school.jpg"  alt="School">
+                        <img src="../assets/imgs/school.jpg"  alt="School">
                         <div class="blog-texts">
                             <p class="blog-date">March 13, 2026</p>
                             <h3>So...I Had to Present</h3>
@@ -95,7 +114,7 @@
                     </article>
 
                     <article id="sisters-blog" class="blog-content" data-date="2026-04-26">
-                        <img src="../imgs/sisters.jpg" alt="My Sisters">
+                        <img src="../assets/imgs/sisters.jpg" alt="My Sisters">
                         <div class="blog-texts">
                             <p class="blog-date">April 26, 2026</p>
                             <h3>Sisters Hangout</h3>
@@ -108,7 +127,7 @@
                     </article>
 
                     <article id="unwell-blog" class="blog-content" data-date="2026-07-17">
-                        <img src="../imgs/unwell.jpg" alt="Food">
+                        <img src="../assets/imgs/unwell.jpg" alt="Food">
                         <div class="blog-texts">
                             <p class="blog-date">July 17, 2026</p>
                             <h3>A Little Too Unwell</h3>
@@ -121,7 +140,7 @@
                     </article>
 
                     <article id="laptop-blog" class="blog-content" data-date="2026-08-06">
-                        <img src="../imgs/laptop.jpg" alt="Laptop">
+                        <img src="../assets/imgs/laptop.jpg" alt="Laptop">
                         <div class="blog-texts">
                             <p class="blog-date">August 06, 2026</p>
                             <h3>Laptop Problems</h3>
@@ -136,7 +155,7 @@
                     </article>
 
                     <article id="study-blog" class="blog-content" data-date="2026-08-09">
-                        <img src="../imgs/study.jpg" alt="School">
+                        <img src="../assets/imgs/study.jpg" alt="School">
                         <div class="blog-texts">
                             <p class="blog-date">August 09, 2026</p>
                             <h3>Back to Study</h3>
@@ -155,7 +174,7 @@
                     <h2 class="blog-topic-title">Interests & Hobbies</h2>
 
                     <article id="scenery-blog" class="blog-content" data-date="2026-02-24">
-                        <a href="../pages/scenery.html"><img src="../imgs/mayon.jpg" alt="Scenery"></a>
+                        <a href="blog-posts/scenery.html"><img src="../assets/imgs/mayon.jpg" alt="Scenery"></a>
                         <div class="blog-texts">
                             <p class="blog-date">February 24, 2026</p>
                             <h3>Scenery</h3>
@@ -173,7 +192,7 @@
                     </article>
 
                     <article id="games-blog" class="blog-content" data-date="2026-02-25">
-                        <a href="../pages/games.html"><img src="../imgs/ml4.jpg" alt="Online Games"></a>                      
+                        <a href="blog-posts/games.html"><img src="../assets/imgs/ml4.jpg" alt="Online Games"></a>                      
                         <div class="blog-texts">
                             <p class="blog-date">February 25, 2026</p>
                             <h3>Online Games</h3>
@@ -198,7 +217,7 @@
                     </article>
 
                     <article id="memories-blog" class="blog-content" data-date="2026-02-26">
-                        <a href="../pages/memories.html"><img src="../imgs/memories.jpg" alt="Memories"></a>                          
+                        <a href="blog-posts/memories.html"><img src="../assets/imgs/memories.jpg" alt="Memories"></a>                          
                         <div class="blog-texts">
                             <p class="blog-date">February 26, 2026</p>
                             <h3>Memory Keeping</h3>
@@ -217,7 +236,7 @@
                     </article>
 
                     <article id="diary-blog" class="blog-content" data-date="2026-02-27">
-                        <img src="../imgs/sunset.jpg" alt="Sunset">                       
+                        <img src="../assets/imgs/sunset.jpg" alt="Sunset">                       
                         <div class="blog-texts">
                             <p class="blog-date">February 27, 2026</p>
                             <h3>Diary</h3>
@@ -232,7 +251,7 @@
                     </article>
 
                     <article id="music-blog" class="blog-content" data-date="2026-02-27">
-                        <img src="../imgs/music.jpg" alt="Music">
+                        <img src="../assets/imgs/music.jpg" alt="Music">
                         <div class="blog-texts">
                             <p class="blog-date">February 27, 2026</p>
                             <h3>Music</h3>
@@ -251,7 +270,7 @@
                     </article>
 
                     <article id="sunsets-blog" class="blog-content" data-date="2026-08-16">
-                        <a href="../pages/sunsets.html"><img src="../imgs/sunset1.jpg" alt="Sunset"></a>
+                        <a href="blog-posts/sunsets.html"><img src="../assets/imgs/sunset1.jpg" alt="Sunset"></a>
                         <div class="blog-texts">
                             <p class="blog-date">August 16, 2026</p>
                             <h3>Sunsets</h3>
@@ -269,7 +288,7 @@
                     <h2 class="blog-topic-title">Reflections</h2>
                     
                     <article id="crush-blog" class="blog-content" data-date="2026-04-06">
-                        <img src="../imgs/him.jpg" alt="Crush">
+                        <img src="../assets/imgs/him.jpg" alt="Crush">
                         <div class="blog-texts">
                             <p class="blog-date">April 06, 2026</p>
                             <h3>Maybe I Like the Idea of Him</h3>
@@ -287,7 +306,7 @@
                     </article>
             
                     <article id="fading-friendship-blog" class="blog-content" data-date="2026-06-01">
-                        <img src="../imgs/oldfriend.png" alt="Old Online Friend">
+                        <img src="../assets/imgs/oldfriend.png" alt="Old Online Friend">
                         <div class="blog-texts">
                             <p class="blog-date">June 01, 2026</p>
                             <h3>Fading Friendship</h3>
@@ -305,7 +324,7 @@
                     </article>
 
                     <article id="careers-blog" class="blog-content" data-date="2026-08-05">
-                        <img src="../imgs/careers.jpg" alt="Careers">
+                        <a href="blog-posts/careers.html"><img src="../assets/imgs/careers.jpg" alt="Careers"></a>
                         <div class="blog-texts">
                             <p class="blog-date">August 05, 2026</p>
                             <h3>Dream Careers</h3>
@@ -323,7 +342,7 @@
                                 <br><br>
                                 This may seem unusual to some people, but when I was a child, I dreamed of becoming a housewife. I wanted to build my own family and give my future children the experiences I didn't get to have as a child. I imagined myself as a sweet and caring wife who would patiently wait for her husband to get home from work. I was inspired by fictional stories where the main character faced many challenges in life, but eventually overcame them and met the love of her life who she will build a family with. Those stories made me believe that love, family, and resilience were beautiful goals to have. I believed that being a housewife was still a job, because it requires effort, sacrifice, patience, and unconditional love. That is why I included it as my dream career when I was young. Even now, I still dream of becoming a housewife someday, but my perspective has grown as I have grown. Before, I imagined myself staying at home and focusing only on raising my children. Now, I want to work alongside my future husband. I want to be not only a loving wife and mother, but also a responsible  woman who contributes financially, built her own career, and supports her family in every way possible. 
                                 <br><br>
-                                At last, my current dream career: becoming a web or software developer, or pursuing any IT-related profession. Since I am taking up Information Technology, it feels natural that I would also build my future career in this field. Ever since I learned about computers and the things they made possible, I became curious. That curiosity eventually led me to this path. I still remember the first time I used a computer. I was in Grade 4 when our school built a new computer laboratory, and we were the first batch of students to use it — at least, as far as I can remember. The only thing I clearly remember doing was learning how to properly open and shut down a computer. I don't recall the other activities, but I do remember how amazed I was by how everything worked. Unfortunately, we didn't have our own computer at home, so I wasn't able to explore more or deepen my understanding of how computers work and the science behind them. When I reached high school, I was excited to become a Grade 9 student because that was when we could finally choose our specialization in TLE (Technology and Livelihood Education). In Grades 7 and 8, we had exploratory courses, where each quarter introduced us to a different field. But in Grades 9 and 10, we were allowed to choose our specialization. Of course, I chose CSS (Computer Systems Servicing) because it focused on computers. However, things did not go as I had hoped. Near the end of the 2020 school year, when I was in Grade 8 and about to enter Grade 9, the COVID-19 pandemic happened. Instead of face-to-face classes where I could have used the school's computer laboratory, we shifted to online classes and printed learning modules. I didn't get the chance to learn more about computers since I didn't have my own computer. Sometimes, I feel like those two years of high school were lost opportunities — years that could have been spent developing my skills. We only had a chance to use the computer lab when there was a project about connecting wires, and that was the only thing we did during those times. Thankfully, face-to-face classes returned when I entered senior high school. This time I chose STEM (Science, Technology, Engineering, and Mathematics) strand instead of CSS or ICT. I was told about the advantages of STEM, so I decided to take that path. And now, here I am in Bicol University, my dream school, taking up my dream course, Information Technology. Throughout my two years in this course, I have learned so much about computers, and the world behind them. What once felt like magic slowly became knowledge that I could understand and apply.Throughout my two years in this course, I have learned so much about computers and the world behind them. What once felt like magic slowly became something I could understand. Each lesson answered my curiosity and helped me become more certain about my dream career in IT.  Now that I am clearer about my goals, I want to continue to learn and apply my knowledge in the real world. Although I am still learning, I have begun collecting ideas and envisioning projects that I look forward to develop into websites of my own. My goals remind me why I started and motivate me to keep growing. There are many opportunities in the field of technology, and I believe this journey is only just beginning. I am excited to keep learning, creating, and turning my curiosity into something meaningful. 
+                                At last, my current dream career: becoming a web or software developer, or pursuing any IT-related profession. Since I am taking up Information Technology, it feels natural that I would also build my future career in this field. Ever since I learned about computers and the things they made possible, I became curious. That curiosity eventually led me to this path. I still remember the first time I used a computer. I was in Grade 4 when our school built a new computer laboratory, and we were the first batch of students to use it — at least, as far as I can remember. The only thing I clearly remember doing was learning how to properly open and shut down a computer. I don't recall the other activities, but I do remember how amazed I was by how everything worked. Unfortunately, we didn't have our own computer at home, so I wasn't able to explore more or deepen my understanding of how computers work and the science behind them. When I reached high school, I was excited to become a Grade 9 student because that was when we could finally choose our specialization in TLE (Technology and Livelihood Education). In Grades 7 and 8, we had exploratory courses, where each quarter introduced us to a different field. But in Grades 9 and 10, we were allowed to choose our specialization. Of course, I chose CSS (Computer Systems Servicing) because it focused on computers. However, things did not go as I had hoped. Near the end of the 2020 school year, when I was in Grade 8 and about to enter Grade 9, the COVID-19 pandemic happened. Instead of face-to-face classes where I could have used the school's computer laboratory, we shifted to online classes and printed learning modules. I didn't get the chance to learn more about computers since I didn't have my own computer. Sometimes, I feel like those two years of high school were lost opportunities — years that could have been spent developing my skills. We only had a chance to use the computer lab when there was a project about connecting wires, and that was the only thing we did during those times. Thankfully, face-to-face classes returned when I entered senior high school. This time I chose STEM (Science, Technology, Engineering, and Mathematics) strand instead of CSS or ICT. I was told about the advantages of STEM, so I decided to take that path. And now, here I am in Bicol University, my dream school, taking up my dream course, Information Technology. Throughout my two years in this course, I have learned so much about computers and the world behind them. What once felt like magic slowly became something I could understand. Each lesson answered my curiosity and helped me become more certain about my dream career in IT.  Now that I am clearer about my goals, I want to continue to learn and apply my knowledge in the real world. Although I am still learning, I have begun collecting ideas and envisioning projects that I look forward to develop into websites of my own. My goals remind me why I started and motivate me to keep growing. There are many opportunities in the field of technology, and I believe this journey is only just beginning. I am excited to keep learning, creating, and turning my curiosity into something meaningful. 
                                 <br><br>
                                 All the dreams I had growing up remind me of who I once was and who I am still becoming. The goals I held in my heart tell the story of why and how I am here today. They make me more determined to keep striving for the future I once imagined. To the child who carried so many dreams, I know you are excited to see who I will become. Your dedication and courage brought me to this path. I will always be grateful to you, for shaping the person I am today and for everything I have achieved so far.                    
                             </p>
@@ -331,7 +350,7 @@
                     </article>
 
                     <article id="childhood-blog" class="blog-content" data-date="2026-08-07">
-                        <a href="../pages/childhood.html"><img src="../imgs/childhood.jpg" alt="Childhood"></a>
+                        <a href="blog-posts/childhood.html"><img src="../assets/imgs/childhood.jpg" alt="Childhood"></a>
                         <div class="blog-texts">
                             <p class="blog-date">August 07, 2026</p>
                             <h3>The Child I Was</h3>
@@ -343,7 +362,9 @@
                                 <br><br>
                                 I remember how I used to spend my days playing from morning until night. Most of my childhood was spent outside with friends, making our own adventures. We'd play hide-and-seek, play house, run in the rain, splash around in the mud, and pretend we're chefs by mixing leaves and fruits into our own little recipes. I think I've played all the games I could have as a child. I was an adventorous kid. I would wander off to places my parents didn't know I had gone. I often go to the rice fields not too far from our home. We would walk there under the bright afternoon sun, picking fruits and flowers along the way. Sometimes, we'd even come home carrying a bag full of mangoes. Those simple trips became some of my favorite childhood memories. That was our way of spending time together, creating fun out of the ordinary.
                                 <br><br>
-                                I'm not just all about playing games though. I'm was also a good student. Back in elementary school, I was a consistent honor student. I was one of the top students in our batch, and I was actively involved in school organizations, activities, and competitions. Looking back, I realize just how much I enjoyed being that kind of student. One of the most memorable moments I had was during our school's Buwan ng Wika celebration. I was chosen as the representative of our grade level for a storytelling competition. I had to reenact an entire story all by myself, playing not only the main character but also the supporting characters. It was challenging, but somehow, I pulled it off. My performance was apparently amazing—as everyone told me afterward—and I ended up winning the competition. Because of that, I was chosen as our grade level's representative again in the following years until I graduated from elementary school. I also joined competitions outside our school. One of them was an Araling Panlipunan (AP) contest where I competed against students from other schools. I only had a few weeks to prepare, so everything felt rushed. I didn't have time to review the other topics, but I focused on memorizing the Philippine geography. And yes, I once memorized the entire map of the Philippines, along with the capital cities of each province. Since I've memorized the whole Philippine map it was the easiest part of the test for me, even though it was considered the hard level. I managed to make it through several rounds, but I eventually lost in the round for the top five. The questions were about tourist spots, which I hadn't had enough time to review. Even though I didn't make it to the top five, I still placed in the top ten and was awarded a medal and a certificate of participation. It was a great experience. How I loved being a competitive student. Sometimes, I wish I had stayed that way. But things changed when I entered high school. I experienced a bit of culture shock because everything felt so different from what I was used to. Elementary school had been familiar to me. I knew how things worked, I was comfortable with my environment, and I knew what kind of student I was. Then suddenly, I entered a completely different world. Because of that transition, I wasn't able to make it onto the honor list in Grade 7. It was the only grade level where I lost my honor streak. Thankfully, I was able to regain it when I reached Grade 8. Still, that one year made me realize that being a good student isn't always about maintaining a perfect record. There will be times when things change, when you struggle to adjust, and when you don't perform the way you used to. And that's okay. Being an active and competitive student became such an important part of my childhood. Through those experiences, I gained more than medals, certificates, and recognition. I gained memories, confidence, knowledge, friendships, and values that have become a part of who I am. 
+                                I'm not just all about playing games though. I'm was also a good student. Back in elementary school, I was a consistent honor student. I was one of the top students in our batch, and I was actively involved in school organizations, activities, and competitions. Looking back, I realize just how much I enjoyed being that kind of student. One of the most memorable moments I had was during our school's Buwan ng Wika celebration. I was chosen as the representative of our grade level for a storytelling competition. I had to reenact an entire story all by myself, playing not only the main character but also the supporting characters. It was challenging, but somehow, I pulled it off. My performance was apparently amazing—as everyone told me afterward—and I ended up winning the competition. Because of that, I was chosen as our grade level's representative again in the following years until I graduated from elementary school. I also joined competitions outside our school. One of them was an Araling Panlipunan (AP) contest where I competed against students from other schools. I only had a few weeks to prepare, so everything felt rushed. I didn't have time to review the other topics, but I focused on memorizing the Philippine geography. And yes, I once memorized the entire map of the Philippines, along with the capital cities of each province. Since I've memorized the whole Philippine map it was the easiest part of the test for me, even though it was considered the hard level. I managed to make it through several rounds, but I eventually lost in the round for the top five. The questions were about tourist spots, which I hadn't had enough time to review. Even though I didn't make it to the top five, I still placed in the top ten and was awarded a medal and a certificate of participation. It was a great experience. 
+                                <br><br>
+                                How I loved being a competitive student. Sometimes, I wish I had stayed that way. But things changed when I entered high school. I experienced a bit of culture shock because everything felt so different from what I was used to. Elementary school had been familiar to me. I knew how things worked, I was comfortable with my environment, and I knew what kind of student I was. Then suddenly, I entered a completely different world. Because of that transition, I wasn't able to make it onto the honor list in Grade 7. It was the only grade level where I lost my honor streak. Thankfully, I was able to regain it when I reached Grade 8. Still, that one year made me realize that being a good student isn't always about maintaining a perfect record. There will be times when things change, when you struggle to adjust, and when you don't perform the way you used to. And that's okay. Being an active and competitive student became such an important part of my childhood. Through those experiences, I gained more than medals, certificates, and recognition. I gained memories, confidence, knowledge, friendships, and values that have become a part of who I am. 
                                 <br><br>
                                 Childhood was a chapter I once wanted to leave behind, only to realize later how much I would miss it. I can't go back to those days, but I can always look back and remember the child I was—the carefree, curious, and adventurous girl who found happiness in the simplest things. Looking at who I am now, I sometimes can't believe how different I've become. I used to have so much energy. I could spend an entire day playing outside, joining activities, competing in contests, and talking to people without giving it much thought. Now, I feel like I've lost so much of that energy. I'm much quieter, more hesitant, and far less active than I was when I was a kid. Even the student I used to be feels like someone from a different time. I was once so competitive and active in school. I joined competitions, participated in events, and took pride in being an honor student. Now, I don't even get honors anymore, I rarely participate in school events, and I find myself avoiding the spotlight rather than stepping into it. I even became afraid of being in front of people, which feels almost ironic when I remember how I used to stand onstage and perform without hesitation.
                                 <br><br>
@@ -361,22 +382,27 @@
 
                 <div class="gallery-content">
                     <div class="images">
-                        <a href="../pages/scenery.html#img-gallery" ><img src="../imgs/scene3.jpg" alt="Scenery">
+                        <a href="blog-posts/scenery.html#img-gallery" ><img src="../assets/imgs/scene3.jpg" alt="Scenery">
                         <h2 class="images-title">Scenery</h2>
                         </a>
                     </div>
                     <div class="images">
-                        <a href="../pages/games.html#img-gallery" ><img src="../imgs/rb2.png" alt=Games">
+                        <a href="blog-posts/sunsets.html#img-gallery" ><img src="../assets/imgs/sunset6.jpg" alt="Sunset">
+                        <h2 class="images-title">Sunsets</h2>
+                        </a>
+                    </div>
+                    <div class="images">
+                        <a href="blog-posts/games.html#img-gallery" ><img src="../assets/imgs/rb2.png" alt=Games">
                         <h2 class="images-title">Online Games</h2>
                         </a>
                     </div>
                     <div class="images">
-                        <a href="../pages/memories.html#img-gallery" ><img src="../imgs/m1.jpg" alt="Memories">
+                        <a href="blog-posts/memories.html#img-gallery" ><img src="../assets/imgs/m1.jpg" alt="Memories">
                         <h2 class="images-title">Memory Keeping</h2>
                         </a>
                     </div>
                     <div class="images">
-                        <a href="../pages/childhood.html#img-gallery" ><img src="../imgs/childhood1.jpg" alt="Childhood">
+                        <a href="blog-posts/childhood.html#img-gallery" ><img src="../assets/imgs/childhood1.jpg" alt="Childhood">
                         <h2 class="images-title">Childhood</h2>
                         </a>
                     </div>
@@ -387,9 +413,9 @@
         <footer>
             <p>"Life has got all those twists and turns. You've got to hold on tight and off you go."</p>
             <div class="foot-contacts">
-                <a href="https://www.facebook.com/joyce.lodana" target="_blank" rel="noopener"><img src="../imgs/facebook.png" alt="Facebook"></a>
-                <a href="https://www.instagram.com/krumi.j" target="_blank" rel="noopener"><img src="../imgs/ig.png" alt="Instagram"></a>
-                <a href="https://github.com/purplyjoy" target="_blank" rel="noopener"><img src="../imgs/github.png" alt="GitHub"></a>
+                <a href="https://www.facebook.com/joyce.lodana" target="_blank" rel="noopener"><img src="../assets/imgs/facebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/krumi.j" target="_blank" rel="noopener"><img src="../assets/imgs/ig.png" alt="Instagram"></a>
+                <a href="https://github.com/purplyjoy" target="_blank" rel="noopener"><img src="../assets/imgs/github.png" alt="GitHub"></a>
             </div>
         </footer>
 
