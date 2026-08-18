@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact</title>
+        <link rel="icon" type="image/png" href="../imgs/logo.png">
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+        
+        <!-- navigation bar -->
+        <nav>
+            <a href="../index.html"><img src="../imgs/logo.png" alt="Logo"></a>
+            
+            <ul class="nav-links" id="navLinks">
+
+                <!-- pages -->
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+
+                <!-- socials -->
+                <li><a href="https://www.facebook.com/joyce.lodana" target="_blank"  rel="noopener">
+                    <img src="../imgs/fb-logo.png" alt="Facebook">
+                </a></li>
+                <li><a href="https://www.instagram.com/krumi.j" target="_blank"  rel="noopener">
+                    <img src="../imgs/ig-logo.png" alt="Instagram">
+                </a></li>
+            </ul>
+
+            <div class="hamburger-icon" id="hamburger">☰</div>
+        </nav>
+
+        <div class="contact-container">
+            <div class="contact-left">
+                <h1 class="get-in-touch">GET IN TOUCH</h1>
+                <p class="connect">
+                    I'd love to connect! Whether you have questions, advice, or collaboration ideas, feel free to reach out.
+                </p>
+                
+                <div class="email">
+                    <a href="mailto:joycellorera2@gmail.com?subject=Inquiry" target="_blank"><img src="../imgs/email.png" alt="Email">
+                    <a href="mailto:joycellorera2@gmail.com" target="_blank" class="email-text"><p>joycellorera2@gmail.com</p></a> 
+                </div>
+                
+                <div class="contacts">
+                    <a href="https://www.facebook.com/joyce.lodana" target="_blank" rel="noopener noreferrer"><img src="../imgs/facebook.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/krumi.j" target="_blank" rel="noopener noreferrer"><img src="../imgs/ig.png" alt="Instagram"></a>
+                    <a href="https://github.com/purplyjoy" target="_blank" rel="noopener noreferrer"><img src="../imgs/github.png" alt="GitHub"></a>
+                </div>
+            </div>
+
+            <form action="https://formspree.io/f/myegdgnb" method="POST" class="contact-right">
+                
+                <div class="box-name">
+                    <input type="text" id="name" name="name" class="contact-text" placeholder="Name" required>
+                </div>
+
+                <div class="box-email">
+                   <input type="email" id="email" name="email" class="contact-text" placeholder="Email" required>
+                </div>
+
+                <div class="box-message">
+                    <textarea id="message" name="message" class="contact-message" placeholder="Message" rows="5" required></textarea>
+                </div>
+
+                <div class="box-send">
+                    <button type="submit" class="contact-send">Send</button>
+                </div>
+
+            </form>
+        </div>   
+
+        <script src="../js/script.js"></script>
+    </body>
+</html>
