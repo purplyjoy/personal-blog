@@ -1,1 +1,1 @@
-This is my personal blog website
+This site is a personal blog that I created to share my experiences and interests though stories and articles.
