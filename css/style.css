@@ -79,14 +79,9 @@ nav img {
 }
 
 @media (max-width: 768px) {
-    nav {
-        position: relative;
-    }
-
     nav a:has(img) {
         position: absolute;
         left: 50%;
-        transform: translateX(-50%);
     }
 }
 
