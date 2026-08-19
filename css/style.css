@@ -78,6 +78,18 @@ nav img {
     }
 }
 
+@media (max-width: 768px) {
+    nav {
+        position: relative;
+    }
+
+    nav a:has(img) {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
 .nav-links {
     font-family: 'Segoe UI', sans-serif;
     font-size: 15px;
@@ -269,7 +281,7 @@ nav img {
     font-size: 18px;
     margin: 10px 0 5px 0;
     padding-bottom: 8px;
-    border-bottom: 2px solid #cdc5f3;
+    border-bottom: 2px solid #ecdaff;
 }
 
 .box h4 {
@@ -1364,7 +1376,7 @@ video {
 /* DARK MODE */
 
 body.dark-mode {
-    background-color: #161319;
+    background-color: #101011;
     color: #e6dcec;
 }
 
