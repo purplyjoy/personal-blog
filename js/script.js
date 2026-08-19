@@ -57,7 +57,7 @@ document.querySelectorAll(".explore").forEach(boxes => {
     entries.forEach(entry => boxes.appendChild(entry));
 });
 
-//SIDEBAR BUTTON
+//sidebar button
 const toggleBtn = document.getElementById("sidebarToggle");
 const sidebar = document.getElementById("sidebar");
 
@@ -73,7 +73,7 @@ if (toggleBtn && sidebar) {
     });
 }
 
-//SIDEBAR active section
+//sidebar active section
 const sections = document.querySelectorAll("section[id]");
 const sidebarLinks = document.querySelectorAll(".sidebar a");
 
@@ -176,6 +176,7 @@ videos.forEach(video => {
     });
 });
 
+//theme toggle
 const themeToggle = document.getElementById("theme-toggle");
 
 if (localStorage.getItem("theme") === "dark") {
@@ -183,7 +184,7 @@ if (localStorage.getItem("theme") === "dark") {
     themeToggle.checked = true;
 }
 
-// Change theme when toggle is clicked
+//change theme when toggle is clicked
 themeToggle.addEventListener("change", function () {
     if (themeToggle.checked) {
         document.body.classList.add("dark-mode");
