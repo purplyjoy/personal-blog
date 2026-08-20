@@ -1403,6 +1403,10 @@ body.dark-mode .scroll-btn {
     background-color: #5e3b81;
 }
 
+body.dark-mode .scroll-btn:hover {
+    background-color: #844bc6;
+}
+
 body.dark-mode .all-posts {
     color: #e6dcec;
 }
